@@ -1,0 +1,278 @@
+:root {
+      --main-color: #1e1357;
+      --accent-color: #2cd4d9;
+      --text-color: #333;
+      --bg-color: #dee2e7;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h2 {
+      color: var(--main-color);
+    }
+
+    .custom-text {
+      color: var(--text-color);
+    }
+
+/* Alignement général du texte dans le corps */
+p, ul, ol, li, strong {
+  text-align: left; /* Force le texte à être à gauche pour la lisibilité */
+}
+
+/* Alignement titres */
+
+h3 {
+  text-align: center; /* Les titres principaux au centre */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  text-align: left;
+}
+
+
+
+/* Alignement listes */
+
+ul, ol {
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto; /* Centré horizontalement avec marge en bas */
+  padding-left: 1.5rem; /* Indentation standard des listes */
+}
+
+/* Liste secondaire avec marge et indentation */
+
+.segundo-ul {
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
+
+/* Liens et textes en gras */
+
+strong {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+/* Navbar (inchangé sauf ajout léger pour mobile) */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--accent-color);
+  padding: 1rem 2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+  background-color: rgb(0, 162, 219);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav {
+  position: relative;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: var(--accent-color);
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Titres et introduction */
+
+.titre {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-size: 2.2rem;
+  margin-top: 2rem;
+}
+
+.intro {
+  text-align: left;
+  max-width: 600px;
+  margin: 0.2rem auto 2rem;
+  font-size: 1.1rem;
+  color: #e23e0d;
+  font-weight: bold;
+}
+
+/* Sections info */
+
+.info-section {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #ffffff10;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.contact-form .form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: solid 1px rgb(225, 143, 241);
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 2px solid var(--main-color);
+}
+
+/* Ton style de bouton personnalisé */
+.contact-form button {
+  background-color: var(--accent-color);
+  color: white;
+  width: 350px;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #1bb3b6;
+}
+
+
+.footer {
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+#account {
+  display: flex;
+  gap: 2rem;           /* espace entre les blocs */
+  flex-wrap: wrap;     /* pour que ça s’adapte sur petits écrans */
+  justify-content: center;
+}
+
+.form-block {
+  flex: 1 1 300px;     /* largeur flexible minimum 300px */
+  background-color: #f9f9f9;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+
+/* Responsive (améliorations) */
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  
+  body {
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 100%; /* juste sous le nav */
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-links.show-menu {
+    display: flex;
+  }
+}
+
+
+
+

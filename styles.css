@@ -45,8 +45,6 @@ h4 {
   text-align: left;
 }
 
-
-
 /* Alignement listes */
 
 ul, ol {
@@ -191,7 +189,7 @@ nav {
 .contact-form button {
   background-color: var(--accent-color);
   color: white;
-  width: 350px;
+  max-width: 500px;
   border: none;
   padding: 0.6rem 1.2rem;
   border-radius: 5px;
@@ -272,7 +270,3 @@ nav {
     display: flex;
   }
 }
-
-
-
-

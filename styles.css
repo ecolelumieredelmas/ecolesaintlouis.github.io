@@ -11,6 +11,10 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
+    a {
+  color: rgb(135, 135, 241) !important;
+}
+
     h2 {
       color: var(--main-color);
     }
@@ -270,3 +274,7 @@ nav {
     display: flex;
   }
 }
+
+
+
+
